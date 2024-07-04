@@ -10,6 +10,10 @@
     </head>
     <body>        
         {% for post in post %}
+        <h1>{{ post.title }}</h1>
+        <p> By {{ post.author }} on {{ post.date_posted}}</p>
+        <p>{{ post.content }}</p>
+        {% endfor %}
         <h1>Hello World!</h>
         <script src="" async defer></script>
     </body>
